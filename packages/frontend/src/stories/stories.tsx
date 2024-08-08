@@ -120,13 +120,16 @@ const Stories: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="stories">
+    <div className="yourstoriesBody">
+       <div className="stories">
       <Hamburger onClick={() => setIsOpen(!isOpen)} />
       <Sidebar isOpen={isOpen} />
       <div className='bookBody'>
         <MyBook />
       </div>
     </div>
+    </div>
+   
   );
 };
 
